@@ -42,6 +42,12 @@ public class MainController implements Initializable {
 	@FXML
 	private Button button1_7;
 	@FXML
+	private Button button2;
+	@FXML
+	private Button button3;
+	@FXML
+	private Button button4;
+	@FXML
 	private Label label_DNI;
 	@FXML
 	private Label label_Name;
@@ -66,6 +72,7 @@ public class MainController implements Initializable {
 	private AnchorPane pane5a17;
 	private AnchorPane pane5a2;
 	private AnchorPane pane5a3;
+	private AnchorPane pane5a4;
 	
 	private Att5a11Controller pane5a11Controller;
 	private Att5a12Controller pane5a12Controller;
@@ -76,6 +83,7 @@ public class MainController implements Initializable {
 	private Att5a17Controller pane5a17Controller;
 	private Att5a2Controller pane5a2Controller;
 	private Att5a3Controller pane5a3Controller;
+	private Att5a4Controller pane5a4Controller;
 	
 	public MainController(Patient patient) {		
 		
@@ -134,6 +142,11 @@ public class MainController implements Initializable {
 			pane5a3Controller = new Att5a3Controller(this);
 			loader.setController(pane5a3Controller);
 			pane5a3 = (AnchorPane) loader.load();
+			
+			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/5a-4.fxml"));
+			pane5a4Controller = new Att5a4Controller(this);
+			loader.setController(pane5a4Controller);
+			pane5a4 = (AnchorPane) loader.load();
 			
 			long after = System.currentTimeMillis();
 			System.out.println("Tiempo de carga: " + (after-before));
@@ -203,6 +216,11 @@ public class MainController implements Initializable {
 	@FXML
 	public void goto3(ActionEvent actionEvent) {
 		root.setCenter(pane5a3);
+	}
+	
+	@FXML
+	public void goto4(ActionEvent actionEvent) {
+		root.setCenter(pane5a4);
 	}
 
 

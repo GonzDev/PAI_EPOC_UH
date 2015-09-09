@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane styleClass="anchor-pane" stylesheets="@5a-4.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="362.0" layoutY="156.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="La intensidad del tratamiento dependerá de la gravedad de la agudización." wrapText="true" />
+            <Label text="En líneas generales se seguirá la siguiente pauta terapéutica inicial:" wrapText="true" />
+            <Label text="1. Oxigenoterapia: " wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <CheckBox fx:id="checkBox_1A" mnemonicParsing="false" text="Indicado en pacientes con insuficiencia respiratoria." />
+            <CheckBox fx:id="checkBox_1B" mnemonicParsing="false" text="Debe administrarse de forma controlada" />
+            <Label text="2. Broncodilatadores de acción corta" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <CheckBox fx:id="checkBox_2A" mnemonicParsing="false" text="Beta-adrenergicos de acción corta" />
+            <CheckBox fx:id="checkBox_2B" mnemonicParsing="false" text="Anticolinérgicos de acción corta" />
+            <Label text="3. Corticoides de acción corta">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <CheckBox fx:id="checkBox_3A" mnemonicParsing="false" text="Indicados en agudizaciones moderadas, graves o muy graves" />
+            <Label text="4. Antibióticos sistémicos">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <CheckBox fx:id="checkBox_4A" mnemonicParsing="false" text="Utilizar siempre que aparezca cambio en el color del esputo, como expresión indirecta de posible infección bacteriana" wrapText="true" />
+            <CheckBox fx:id="checkBox_4B" mnemonicParsing="false" text="En ausencia de purulencia, también está indicado si existe incremento de la disnea del volumen del esputo" wrapText="true" />
+            <Label text="5. Ajustar tratamiento de la comorbilidad">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="butt_Back" layoutX="14.0" layoutY="401.0" mnemonicParsing="false" onAction="#previousPage" text="Atrás" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="90.0" />
+      <Button fx:id="butt_Continue" layoutX="24.0" layoutY="411.0" mnemonicParsing="false" onAction="#nextPage" text="Continuar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="90.0" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</AnchorPane>

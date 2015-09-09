@@ -74,7 +74,7 @@
                   <Font size="10.0" />
                </font>
             </Button>
-            <Button fx:id="button_4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" styleClass="left-button" text="4. INICIAR TRATAMIENTO">
+            <Button fx:id="button_4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto4" styleClass="left-button" text="4. INICIAR TRATAMIENTO">
                <font>
                   <Font size="10.0" />
                </font>
