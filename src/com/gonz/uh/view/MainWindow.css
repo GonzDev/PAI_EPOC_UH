@@ -8,16 +8,29 @@
 	-fx-background-color: #c1c1c1;
 }
 
-.left-button {
+.button_1 {
 	-fx-background-color: transparent;
 	-fx-font-size: 12pt;
 }
 
-.left-button:focused {
+.button_1:focused {
 	-fx-background-color: #ffffff;
 }
 
-.left-button:hover {
+.button_1:hover {
+	-fx-background-color: #fffff0;
+}
+
+.button_2 {
+	-fx-background-color: #ffffff ;
+	-fx-font-size: 12pt;
+}
+
+.button_2:focused {
+	-fx-background-color: #ffffff;
+}
+
+.button_2:hover {
 	-fx-background-color: #fffff0;
 }
 
@@ -25,7 +38,7 @@
 /** --------- LEFT TITLED PANE -------------- */
 
 
-.left-titled-pane > .title 
+.left-titled-pane1 > .title 
 {
   	-fx-background-color: transparent;
 	-fx-font-size: 12pt;
@@ -33,28 +46,62 @@
 }
 
 
-.left-titled-pane > .title > .arrow-button 
+.left-titled-pane1 > .title > .arrow-button 
 {
 	-fx-background-color: transparent;
 }
 
-.left-titled-pane > .title > .arrow-button .arrow 
+.left-titled-pane1 > .title > .arrow-button .arrow 
 {
 	-fx-background-color: transparent;
 	-fx-padding: 0em 0em 0em 0em;
 }
 
-.left-titled-pane:focused > .title 
+.left-titled-pane1:focused > .title 
 {
   	-fx-background-color: #ffffff;
 }
 
-.left-titled-pane:hover > .title 
+.left-titled-pane1:hover > .title 
 {
   	-fx-background-color: #fffff0;
 }
 
-.left-titled-pane:focused > .title > .arrow-button .arrow 
+.left-titled-pane1:focused > .title > .arrow-button .arrow 
+{
+	-fx-background-color: transparent;
+}
+
+.left-titled-pane2 > .title 
+{
+  	-fx-background-color: #ffffff;
+	-fx-font-size: 12pt;
+	-fx-padding: 0.333333em 0.666667em 0.333333em 0em;
+}
+
+
+.left-titled-pane2 > .title > .arrow-button 
+{
+	-fx-background-color: transparent;
+}
+
+.left-titled-pane2 > .title > .arrow-button .arrow 
+{
+	-fx-background-color: transparent;
+	-fx-padding: 0em 0em 0em 0em;
+}
+
+.left-titled-pane2:focused > .title 
+{
+  	-fx-background-color: #ffffff;
+}
+
+.left-titled-pane2:hover > .title 
+{
+  	-fx-background-color: #fffff0;
+}
+
+.left-titled-pane2:focused > .title > .arrow-button .arrow 
 {
 	-fx-background-color: transparent;
 }

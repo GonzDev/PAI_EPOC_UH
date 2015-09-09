@@ -18,11 +18,11 @@
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
          </padding>
          <children>
-            <TitledPane fx:id="button1" alignment="BASELINE_LEFT" focusTraversable="false" styleClass="left-titled-pane" text="1. DIAGNÓSTICO">
+            <TitledPane fx:id="button1" alignment="BASELINE_LEFT" focusTraversable="false" styleClass="left-titled-pane1" text="1. DIAGNÓSTICO">
                <content>
                   <VBox focusTraversable="true" style="-fx-background-color: #c1c1c1;">
                      <children>
-                        <Button fx:id="button1_1" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto11" styleClass="left-button" text="1. Evaluación de síntomas">
+                        <Button fx:id="button1_1" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto11" styleClass="button_1" text="1. Evaluación de síntomas">
                            <font>
                               <Font size="10.0" />
                            </font>
@@ -30,32 +30,32 @@
                               <Insets />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="button1_2" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto12" styleClass="left-button" text="2. Exploración física">
+                        <Button fx:id="button1_2" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto12" styleClass="button_1" text="2. Exploración física">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Button>
-                        <Button fx:id="button1_3" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto13" styleClass="left-button" text="3. Tipo de agudización">
+                        <Button fx:id="button1_3" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto13" styleClass="button_1" text="3. Tipo de agudización">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Button>
-                        <Button fx:id="button1_4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto14" styleClass="left-button" text="4. Comorbilidad">
+                        <Button fx:id="button1_4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto14" styleClass="button_1" text="4. Comorbilidad">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Button>
-                        <Button fx:id="button1_5" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto15" styleClass="left-button" text="5. Situación basal">
+                        <Button fx:id="button1_5" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto15" styleClass="button_1" text="5. Situación basal">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Button>
-                        <Button fx:id="button1_6" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto16" styleClass="left-button" text="6. Tratamiento previo">
+                        <Button fx:id="button1_6" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto16" styleClass="button_1" text="6. Tratamiento previo">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Button>
-                        <Button fx:id="button1_7" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto17" styleClass="left-button" text="7. Exploraciones complementarias">
+                        <Button fx:id="button1_7" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto17" styleClass="button_1" text="7. Exploraciones complementarias">
                            <font>
                               <Font size="10.0" />
                            </font>
@@ -64,17 +64,17 @@
                   </VBox>
                </content>
             </TitledPane>
-            <Button fx:id="button_2" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto2" styleClass="left-button" text="2. CLASIFICACIÓN DE GRAVEDAD">
+            <Button fx:id="button2" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto2" styleClass="button_1" text="2. CLASIFICACIÓN DE GRAVEDAD">
                <font>
                   <Font size="10.0" />
                </font>
             </Button>
-            <Button fx:id="button_3" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto3" styleClass="left-button" text="3. ESTABLECER ETIOLOGÍA">
+            <Button fx:id="button3" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto3" styleClass="button_1" text="3. ESTABLECER ETIOLOGÍA">
                <font>
                   <Font size="10.0" />
                </font>
             </Button>
-            <Button fx:id="button_4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto4" styleClass="left-button" text="4. INICIAR TRATAMIENTO">
+            <Button fx:id="button4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto4" styleClass="button_1" text="4. INICIAR TRATAMIENTO">
                <font>
                   <Font size="10.0" />
                </font>

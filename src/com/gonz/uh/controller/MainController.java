@@ -3,10 +3,12 @@ package com.gonz.uh.controller;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import com.gonz.uh.model.Patient;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -62,6 +64,9 @@ public class MainController implements Initializable {
 	@FXML
 	private ImageView imageView_Photo;
 	
+	private int currPage;
+	
+	private ArrayList<Button> buttons;
 	
 	private AnchorPane pane5a11;
 	private AnchorPane pane5a12;
@@ -88,6 +93,8 @@ public class MainController implements Initializable {
 	public MainController(Patient patient) {		
 		
 		this.patient = patient;
+		this.currPage = 0;
+		this.buttons = new ArrayList<>();
 		
 	}
 	
@@ -148,13 +155,26 @@ public class MainController implements Initializable {
 			loader.setController(pane5a4Controller);
 			pane5a4 = (AnchorPane) loader.load();
 			
+			buttons.add(null);
+			buttons.add(button1_1);
+			buttons.add(button1_2);
+			buttons.add(button1_3);
+			buttons.add(button1_4);
+			buttons.add(button1_5);
+			buttons.add(button1_6);
+			buttons.add(button1_7);
+			buttons.add(button2);
+			buttons.add(button3);
+			buttons.add(button4);				
+			
 			long after = System.currentTimeMillis();
 			System.out.println("Tiempo de carga: " + (after-before));
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}	
 		
-		showPatientInfo();		
+		showPatientInfo();	
 		
 	}
 	
@@ -174,54 +194,88 @@ public class MainController implements Initializable {
 	}
 	
 	@FXML
-	public void goto11(ActionEvent actionEvent) {	
+	public void goto11(ActionEvent actionEvent) {
+		updateStyle(1);
 		root.setCenter(pane5a11);
 	}
 	
 	@FXML
 	public void goto12(ActionEvent actionEvent) {
+		updateStyle(2);
 		root.setCenter(pane5a12);
 	}
 	
 	@FXML
 	public void goto13(ActionEvent actionEvent) {
+		updateStyle(3);
 		root.setCenter(pane5a13);
 	}
 	
 	@FXML
 	public void goto14(ActionEvent actionEvent) {
+		updateStyle(4);
 		root.setCenter(pane5a14);
 	}
 	
 	@FXML
 	public void goto15(ActionEvent actionEvent) {
+		updateStyle(5);
 		root.setCenter(pane5a15);
 	}
 	
 	@FXML
 	public void goto16(ActionEvent actionEvent) {
+		updateStyle(6);
 		root.setCenter(pane5a16);
 	}
 	
 	@FXML
 	public void goto17(ActionEvent actionEvent) {
+		updateStyle(7);
 		root.setCenter(pane5a17);
 	}
 	
 	@FXML
 	public void goto2(ActionEvent actionEvent) {
+		updateStyle(8);
 		root.setCenter(pane5a2);
 	}
 	
 	@FXML
 	public void goto3(ActionEvent actionEvent) {
+		updateStyle(9);
 		root.setCenter(pane5a3);
 	}
 	
 	@FXML
 	public void goto4(ActionEvent actionEvent) {
+		updateStyle(10);
 		root.setCenter(pane5a4);
 	}
-
-
+	
+	private void updateStyle(int index) {
+		if(currPage == 0)
+			currPage = index;
+		else {
+			buttons.get(currPage).getStyleClass().remove("button_2");
+			buttons.get(currPage).getStyleClass().add("button_1");
+		}
+		
+		currPage = index;
+		buttons.get(index).getStyleClass().remove("button_1");
+		buttons.get(index).getStyleClass().add("button_2");
+		
+		ObservableList<String> styles = button1.getStyleClass();
+		if (currPage < 8) {			
+			styles.remove("left-titled-pane1");
+			if (!styles.contains("left-titled-pane2"))
+				styles.add("left-titled-pane2");
+		} else {
+			styles.remove("left-titled-pane2");
+			if (!styles.contains("left-titled-pane1"))
+				styles.add("left-titled-pane1");
+		}
+			
+	}
+	
 }
