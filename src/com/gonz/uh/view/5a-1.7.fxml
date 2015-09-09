@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="564.0" prefWidth="780.0" styleClass="anchor-pane" stylesheets="@5a-1.7.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="55.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label style="-fx-font-weight: bold;" text="1. De forma sistematica se deberán solicitar las siguientes exploraciones:">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Label>
+            <CheckBox fx:id="checkBox_1" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Analítica de la sangre." />
+            <Label text="Debe incluir hemograma y parámetris bioquímicos como la glucemia, laurea, creatinina y los electrolitos." wrapText="true" />
+            <CheckBox fx:id="checkBox_2" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Gasometría arterial." />
+            <Label text="Siempre se deberá recoger la fracción inspiratoria e oxígeno a la que se realiza la tecnica." wrapText="true" />
+            <CheckBox fx:id="checkBox_3" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Radiografía de tórax (PA y L)" />
+            <CheckBox fx:id="checkBox_4" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Electrocardiograma" />
+            <Label style="-fx-font-weight: bold;" text="2. De forma selectiva se podrán pedir las siguientes exploraciones:">
+               <VBox.margin>
+                  <Insets bottom="15.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <CheckBox fx:id="checkBox_5" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Esputo." />
+            <Label text="Indicando si se cumplen alguna de las siguientes circunstancias:" wrapText="true" />
+            <CheckBox fx:id="checkBox_5A" mnemonicParsing="false" text="Fenotipo agudizador, con exacerbación grave/muy grave" wrapText="true">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="checkBox_5B" mnemonicParsing="false" text="Fracaso terapéutico previo" wrapText="true">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="checkBox_5C" mnemonicParsing="false" text="Necesidad de ventilación mecanica" wrapText="true">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="checkBox_6" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Biomarcadores" />
+            <Label text="No existe sufiiente evidencia para recomendar el uso sistemáticode ningún biomarcador. No obstante, alguno de ellos puede ser deayuda en el diagnóstico diferencial. El dímero D, la troponina o elpéptido natriurético tipo B (BNP) son de ayuda para descartar tromboembolismo pulmonar (TEP) o para evaluar cardiopatíaa isquémica o insufiiencia cardíaca, respectivamente." wrapText="true" />
+            <CheckBox fx:id="checkBox_7" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Angiografía por tomografía computerizada (angioTC):" />
+            <Label text="Indicado enpacientes con sospecha moderada-alta de TEP y también en las agudizaciones de causa no aclarda, por la misma razón." />
+         </children>
+      </VBox>
+      <Button fx:id="butt_Continue" mnemonicParsing="false" onAction="#nextPage" text="Continuar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="90.0" />
+      <Button fx:id="butt_Back" mnemonicParsing="false" onAction="#previousPage" text="Atrás" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="90.0" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</AnchorPane>

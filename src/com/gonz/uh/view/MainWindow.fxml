@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" stylesheets="@MainWindow.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane id="rightPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+   </center>
+   <left>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" spacing="5.0" styleClass="left-vbox" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <children>
+            <TitledPane fx:id="button1" alignment="BASELINE_LEFT" focusTraversable="false" styleClass="left-titled-pane" text="1. DIAGNÓSTICO">
+               <content>
+                  <VBox focusTraversable="true" style="-fx-background-color: #c1c1c1;">
+                     <children>
+                        <Button fx:id="button1_1" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto11" styleClass="left-button" text="1. Evaluación de síntomas">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="button1_2" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto12" styleClass="left-button" text="2. Exploración física">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button1_3" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto13" styleClass="left-button" text="3. Tipo de agudización">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button1_4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto14" styleClass="left-button" text="4. Comorbilidad">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button1_5" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto15" styleClass="left-button" text="5. Situación basal">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button1_6" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto16" styleClass="left-button" text="6. Tratamiento previo">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button1_7" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto17" styleClass="left-button" text="7. Exploraciones complementarias">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </content>
+            </TitledPane>
+            <Button fx:id="button_2" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto2" styleClass="left-button" text="2. CLASIFICACIÓN DE GRAVEDAD">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_3" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto3" styleClass="left-button" text="3. ESTABLECER ETIOLOGÍA">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" styleClass="left-button" text="4. INICIAR TRATAMIENTO">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" spacing="5.0" styleClass="right-vbox" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imageView_Photo" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="label_Name" text="Nombre" wrapText="true" />
+            <Label fx:id="label_DNI" text="DNI" wrapText="true" />
+            <Label fx:id="label_Age" text="Edad" wrapText="true" />
+            <Label fx:id="label_Gender" text="Genero" wrapText="true" />
+            <Label fx:id="label_Address" text="Dirección" wrapText="true" />
+            <Label fx:id="label_Phone" text="Teléfono" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

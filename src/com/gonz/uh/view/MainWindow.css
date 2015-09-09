@@ -1,0 +1,70 @@
+.left-vbox {
+	-fx-background-color: #c1c1c1;
+	-fx-padding: 15;
+	-fx-spacing: 5;
+}
+
+.left-accordion {
+	-fx-background-color: #c1c1c1;
+}
+
+.left-button {
+	-fx-background-color: transparent;
+	-fx-font-size: 12pt;
+}
+
+.left-button:focused {
+	-fx-background-color: #ffffff;
+}
+
+.left-button:hover {
+	-fx-background-color: #fffff0;
+}
+
+
+/** --------- LEFT TITLED PANE -------------- */
+
+
+.left-titled-pane > .title 
+{
+  	-fx-background-color: transparent;
+	-fx-font-size: 12pt;
+	-fx-padding: 0.333333em 0.666667em 0.333333em 0em;
+}
+
+
+.left-titled-pane > .title > .arrow-button 
+{
+	-fx-background-color: transparent;
+}
+
+.left-titled-pane > .title > .arrow-button .arrow 
+{
+	-fx-background-color: transparent;
+	-fx-padding: 0em 0em 0em 0em;
+}
+
+.left-titled-pane:focused > .title 
+{
+  	-fx-background-color: #ffffff;
+}
+
+.left-titled-pane:hover > .title 
+{
+  	-fx-background-color: #fffff0;
+}
+
+.left-titled-pane:focused > .title > .arrow-button .arrow 
+{
+	-fx-background-color: transparent;
+}
+
+/** --------- END OF LEFT TITLED PANE -------- */
+
+.right-vbox {
+	-fx-background-color: #c1c1c1;
+	-fx-padding: 15;
+	-fx-spacing: 5;
+	-fx-font-size: 12pt;
+}
+

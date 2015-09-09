@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane styleClass="anchor-pane" stylesheets="@5a-3.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="362.0" layoutY="156.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="1. Para establecer la etiología, primero se deberá realizar el siguiente diagnóstico diferencial:" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <RadioButton fx:id="radButt_1A" mnemonicParsing="false" text="Embolia pulmonar">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="group1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radButt_1B" mnemonicParsing="false" text="Neumonía" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="radButt_1C" mnemonicParsing="false" text="Cardiopatía isquémica aguda" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="radButt_1D" mnemonicParsing="false" text="Insuficiencia cardíaca" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="radButt_1E" mnemonicParsing="false" text="Neumotórax" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="radButt_1F" mnemonicParsing="false" text="Traumatismo torácico" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="radButt_1G" mnemonicParsing="false" text="Derrame pleural" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="radButt_1H" mnemonicParsing="false" text="Arritmia cardíaca como único precipitante" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="45.0" />
+               </VBox.margin>
+            </RadioButton>
+            <Label text="2. Una vez descartadas otras causas secundarias de disnea, se deberá establecer el diagnóstico etiológico:" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <RadioButton fx:id="radButt_2A" mnemonicParsing="false" text="Etiología infecciosa bacteriana">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="group2" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radButt_2B" mnemonicParsing="false" text="Etiología infecciosa vírica" toggleGroup="$group2">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="radButt_2C" mnemonicParsing="false" text="Etiología desconocida" toggleGroup="$group2">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </RadioButton>
+         </children>
+      </VBox>
+      <Button fx:id="butt_Back" layoutX="14.0" layoutY="401.0" mnemonicParsing="false" onAction="#previousPage" text="Atrás" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="90.0" />
+      <Button fx:id="butt_Conitnue" layoutX="24.0" layoutY="411.0" mnemonicParsing="false" onAction="#nextPage" text="Continuar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="90.0" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</AnchorPane>

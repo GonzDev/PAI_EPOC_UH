@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="846.0" prefWidth="758.0" styleClass="anchor-pane" stylesheets="@5a-1.6.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="55.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="1. Valorar, que tipo de medicación respiratoria previa estaba tomando, con especial atención al uso de antibióticos previos:">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Label>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <RadioButton fx:id="radButt_1Y" mnemonicParsing="false" onAction="#enableGroup1" text="Sí" GridPane.columnIndex="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group1" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radButt_1N" mnemonicParsing="false" onAction="#enableGroup1" text="No" toggleGroup="$group1" GridPane.columnIndex="2" />
+                  <Label style="-fx-font-weight: bold;" text="- Antibiótico previo:" />
+               </children>
+            </GridPane>
+            <HBox>
+               <children>
+                  <Label fx:id="label_1A" text="¿Qué antibiótico?:">
+                     <HBox.margin>
+                        <Insets right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textField_1A" />
+               </children>
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label fx:id="label_1B" text="Días que lleva tomando el antibiótico:">
+                     <HBox.margin>
+                        <Insets right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textField_1B" />
+               </children>
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label fx:id="label_1C" text="Dosis:">
+                     <HBox.margin>
+                        <Insets right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textField_1C" />
+               </children>
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </HBox>
+            <GridPane>
+               <children>
+                  <RadioButton fx:id="radButt_2Y" mnemonicParsing="false" onAction="#enableGroup2" prefHeight="10.0" text="Sí" GridPane.columnIndex="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group2" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radButt_2N" mnemonicParsing="false" onAction="#enableGroup2" text="No" toggleGroup="$group2" GridPane.columnIndex="2" />
+                  <Label style="-fx-font-weight: bold;" text="- Corticoide previo:" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="70.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <HBox>
+               <children>
+                  <Label fx:id="label_2A" text="¿Qué corticoide?:">
+                     <HBox.margin>
+                        <Insets right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textField_2A" />
+               </children>
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label fx:id="label_2B" text="Días que lleva tomando el corticoide:">
+                     <HBox.margin>
+                        <Insets right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textField_2B" />
+               </children>
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label fx:id="label_2C" text="Dosis:">
+                     <HBox.margin>
+                        <Insets right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textField_2C" />
+               </children>
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+            </HBox>
+            <CheckBox fx:id="checkBox_3" mnemonicParsing="false" text="Beta-adenérgicos de acción corta (SABA)">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="checkBox_4" mnemonicParsing="false" text="Anticolinergicos de acción prolongada (SAMA)" />
+            <CheckBox fx:id="checkBox_5" mnemonicParsing="false" text="Anticolinérgicos de acción prolongada (LAMA)">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="checkBox_6" mnemonicParsing="false" text="Beta-adrenérgicos de acción prolongada (LABA)" />
+            <CheckBox fx:id="checkBox_7" mnemonicParsing="false" text="Terapia combinada en único dispositivo (LABA + CI)" />
+            <CheckBox fx:id="checkBox_8" mnemonicParsing="false" text="Corticoides inhalados (CI) (monoterapia)" />
+            <CheckBox fx:id="checkBox_9" mnemonicParsing="false" text="Corticoides orales (mantenimiento)" />
+            <CheckBox fx:id="checkBox_10" mnemonicParsing="false" text="Inhibidores de fosfodiesterasa IV">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="checkBox_11" mnemonicParsing="false" text="Teofiinas">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="checkBox_12" mnemonicParsing="false" text="Antioxidantes (N-acetil-cisteina)" />
+            <GridPane>
+               <children>
+                  <RadioButton fx:id="radButt_13Y" mnemonicParsing="false" onAction="#enableGroup13" text="Sí" GridPane.columnIndex="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group02" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radButt_13N" mnemonicParsing="false" onAction="#enableGroup13" text="No" toggleGroup="$group02" GridPane.columnIndex="2" />
+                  <Label style="-fx-font-weight: bold;" text="- Oxigenoterapia domiciliaria crónica:">
+                     <GridPane.margin>
+                        <Insets top="20.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="70.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <HBox>
+               <children>
+                  <Label fx:id="label_13A" text="Flujo de oxígeno:">
+                     <HBox.margin>
+                        <Insets left="45.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textField_13A" />
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <GridPane>
+               <children>
+                  <RadioButton fx:id="radButt_14Y" mnemonicParsing="false" onAction="#enableGroup14" text="Sí" GridPane.columnIndex="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group021" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radButt_14N" mnemonicParsing="false" onAction="#enableGroup14" text="No" toggleGroup="$group021" GridPane.columnIndex="2" />
+                  <Label style="-fx-font-weight: bold;" text="- Ventilación mecánica a domicilio:">
+                     <GridPane.margin>
+                        <Insets top="20.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="70.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <HBox>
+               <children>
+                  <RadioButton fx:id="radButt_14A" mnemonicParsing="false" text="CPAP">
+                     <VBox.margin>
+                        <Insets left="45.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="45.0" />
+                     </padding>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group3" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radButt_14B" mnemonicParsing="false" text="Binivel (BIPAP)" toggleGroup="$group3">
+                     <padding>
+                        <Insets left="45.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="2. Valorar el resto de medicación concomitante (comorbilidad)">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="butt_Continue" mnemonicParsing="false" onAction="#nextPage" text="Continuar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="90.0" />
+      <Button fx:id="butt_Back" mnemonicParsing="false" onAction="#previousPage" text="Atrás" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="90.0" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</AnchorPane>
