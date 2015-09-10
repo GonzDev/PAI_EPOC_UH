@@ -28,8 +28,7 @@ public class Session extends Application {
 		MainController mwc = new MainController(patient);
 		
 		FXMLLoader fxmlLoader = new FXMLLoader();		
-		fxmlLoader.setLocation(this.getClass().getResource("/com/gonz/uh/view/MainWindow.fxml"));
-		
+		fxmlLoader.setLocation(this.getClass().getResource("/com/gonz/uh/view/MainWindow.fxml"));		
 		
 		fxmlLoader.setController(mwc);
 		
@@ -53,7 +52,7 @@ public class Session extends Application {
 		patient.setGender(Patient.MALE);
 		patient.setAddress("C/Paterna, 3, L'Eliana (Valencia)");
 		patient.setPhoneNumber("637 27 91 24");
-		patient.setImageURL(null);
+		patient.setImageURL("/sample/samplePatient.jpg");
 		return patient;
 		
 	}

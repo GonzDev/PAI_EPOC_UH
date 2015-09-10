@@ -75,26 +75,26 @@
                   <Label text="Disminución del nivel de consciencia" GridPane.rowIndex="1" />
                   <Label text="Inestabilidad hemodinámica" GridPane.rowIndex="2" />
                   <Label text="Acidosis respiratoria grave (pH&lt;7.30)" GridPane.rowIndex="3" />
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1">
+                  <RadioButton fx:id="radButt_1AY" mnemonicParsing="false" GridPane.columnIndex="1">
                      <toggleGroup>
                         <ToggleGroup fx:id="group1" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <RadioButton fx:id="radButt_1BY" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <toggleGroup>
                         <ToggleGroup fx:id="group2" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <RadioButton fx:id="radButt_1CY" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <toggleGroup>
                         <ToggleGroup fx:id="group3" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <RadioButton fx:id="radButt_1DY" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <toggleGroup>
                         <ToggleGroup fx:id="group4" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group1" GridPane.columnIndex="2" />
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group2" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group4" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <RadioButton fx:id="radButt_1AN" mnemonicParsing="false" toggleGroup="$group1" GridPane.columnIndex="2" />
+                  <RadioButton fx:id="radButt_1BN" mnemonicParsing="false" toggleGroup="$group2" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="radButt_1CN" mnemonicParsing="false" toggleGroup="$group3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <RadioButton fx:id="radButt_1DN" mnemonicParsing="false" toggleGroup="$group4" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                </children>
             </GridPane>
             <Separator prefWidth="200.0">
@@ -126,56 +126,56 @@
                   <Label text="Cianosis de nueva aparición" GridPane.rowIndex="1" />
                   <Label text="Utilización de musculatura accesoria" GridPane.rowIndex="2" />
                   <Label text="Edemas perifericos de nueva aparición" GridPane.rowIndex="3" />
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1">
+                  <RadioButton fx:id="radButt_2AY" mnemonicParsing="false" GridPane.columnIndex="1">
                      <toggleGroup>
                         <ToggleGroup fx:id="group5" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <RadioButton fx:id="radButt_2BY" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <toggleGroup>
                         <ToggleGroup fx:id="group6" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <RadioButton fx:id="radButt_2CY" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <toggleGroup>
                         <ToggleGroup fx:id="group7" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <RadioButton fx:id="radButt_2DY" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <toggleGroup>
                         <ToggleGroup fx:id="group8" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group5" GridPane.columnIndex="2" />
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group7" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group8" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <RadioButton fx:id="radButt_2AN" mnemonicParsing="false" toggleGroup="$group5" GridPane.columnIndex="2" />
+                  <RadioButton fx:id="radButt_2BN" mnemonicParsing="false" toggleGroup="$group6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="radButt_2CN" mnemonicParsing="false" toggleGroup="$group7" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <RadioButton fx:id="radButt_2DN" mnemonicParsing="false" toggleGroup="$group8" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                   <Label text="SaO2&lt;90% ó PaO2&lt;60 mmHg" GridPane.rowIndex="4" />
                   <Label text="PaCO2&gt;45 mmHg" GridPane.rowIndex="5" />
                   <Label text="Acidosis respiratoria moderada (pH: 7.30-7.35)" GridPane.rowIndex="6" />
                   <Label text="Comorbilidad significativa grave (cardiopatía isquémica reciente, insuficiencia renal crónica, hepatopatía moderada-grave, etc..)" wrapText="true" GridPane.rowIndex="7" />
                   <Label text="Complicaciones (arrítmias graves, insuficiencia cardiaca asociada a la agudización, etc..)" wrapText="true" GridPane.rowIndex="8" />
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                  <RadioButton fx:id="radButt_2EY" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <toggleGroup>
                         <ToggleGroup fx:id="group9" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                  <RadioButton fx:id="radButt_2GN" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="6">
                      <toggleGroup>
                         <ToggleGroup fx:id="group11" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group11" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group9" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                  <RadioButton fx:id="radButt_2GY" mnemonicParsing="false" toggleGroup="$group11" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <RadioButton fx:id="radButt_2EN" mnemonicParsing="false" toggleGroup="$group9" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <RadioButton fx:id="radButt_2FN" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="5">
                      <toggleGroup>
                         <ToggleGroup fx:id="group10" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group10" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                  <RadioButton fx:id="radButt_2FY" mnemonicParsing="false" toggleGroup="$group10" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <RadioButton fx:id="radButt_2IN" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <RadioButton fx:id="radButt_2IY" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="8">
                      <toggleGroup>
                         <ToggleGroup fx:id="group13" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                  <RadioButton fx:id="radButt_2HN" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="7">
                      <toggleGroup>
                         <ToggleGroup fx:id="group12" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group12" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <RadioButton fx:id="radButt_2HY" mnemonicParsing="false" toggleGroup="$group12" GridPane.columnIndex="1" GridPane.rowIndex="7" />
                </children>
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -222,21 +222,21 @@
                   <Label text="FEV1 basal &lt;50%" />
                   <Label text="Comorbilidad cardíaca no grave" GridPane.rowIndex="1" />
                   <Label text="Historia de 2 o más agudizaciones en el último año" GridPane.rowIndex="2" />
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1">
+                  <RadioButton fx:id="radButt_3AY" mnemonicParsing="false" GridPane.columnIndex="1">
                      <toggleGroup>
                         <ToggleGroup fx:id="group14" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <RadioButton fx:id="radButt_3BY" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <toggleGroup>
                         <ToggleGroup fx:id="group15" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <RadioButton fx:id="radButt_3CY" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <toggleGroup>
                         <ToggleGroup fx:id="group16" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group14" GridPane.columnIndex="2" />
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group15" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group16" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <RadioButton fx:id="radButt_3AN" mnemonicParsing="false" toggleGroup="$group14" GridPane.columnIndex="2" />
+                  <RadioButton fx:id="radButt_3BN" mnemonicParsing="false" toggleGroup="$group15" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="radButt_3CN" mnemonicParsing="false" toggleGroup="$group16" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                </children>
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -263,11 +263,11 @@
                   </VBox>
                   <Label GridPane.columnIndex="1" />
                   <Label GridPane.columnIndex="2" />
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="2">
+                  <RadioButton fx:id="radButt_4BY" mnemonicParsing="false" GridPane.columnIndex="2">
                      <toggleGroup>
                         <ToggleGroup fx:id="group17" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" toggleGroup="$group17" GridPane.columnIndex="1" />
+                  <RadioButton fx:id="radButt_4AY" mnemonicParsing="false" toggleGroup="$group17" GridPane.columnIndex="1" />
                </children>
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

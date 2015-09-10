@@ -1,6 +1,5 @@
 package com.gonz.uh.controller;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -186,9 +185,8 @@ public class MainController implements Initializable {
 		label_Gender.setText(patient.getGender());
 		label_Address.setText(patient.getAddress());
 		label_Phone.setText(patient.getPhoneNumber());
-		
-		File file = new File("assets/sample/samplePatient.jpg");
-		Image image = new Image(file.toURI().toString());
+		Image image = new Image(
+				this.getClass().getResourceAsStream(patient.getImageURL()));
 		imageView_Photo.setImage(image);
 		
 	}
