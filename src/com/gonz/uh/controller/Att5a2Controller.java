@@ -54,7 +54,6 @@ public class Att5a2Controller implements Initializable {
 	@FXML
 	public void nextPage(ActionEvent actionEvent) {
 		mainController.goto3(actionEvent);
-
 	}
 
 }

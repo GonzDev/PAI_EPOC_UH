@@ -19,6 +19,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.shape.Circle;
 
 public class MainController implements Initializable {
 	
@@ -62,7 +63,7 @@ public class MainController implements Initializable {
 	private Label label_Address;
 	@FXML
 	private ImageView imageView_Pacient;
-	
+
 	private int currPage;
 	
 	private ArrayList<Button> buttons;
@@ -164,7 +165,7 @@ public class MainController implements Initializable {
 			buttons.add(button1_7);
 			buttons.add(button2);
 			buttons.add(button3);
-			buttons.add(button4);				
+			buttons.add(button4);
 			
 			long after = System.currentTimeMillis();
 			System.out.println("Tiempo de carga: " + (after-before));
@@ -268,15 +269,16 @@ public class MainController implements Initializable {
 		buttons.get(index).getStyleClass().add("button_2");
 		
 		ObservableList<String> styles = button1.getStyleClass();
-		if (currPage < 8) {			
-			styles.remove("left-titled-pane1");
+		if (currPage < 8) {
+			if (styles.contains("left-titled-pane1"))
+				styles.remove("left-titled-pane1");
 			if (!styles.contains("left-titled-pane2"))
 				styles.add("left-titled-pane2");
 		} else {
-			styles.remove("left-titled-pane2");
+			if (styles.contains("left-titled-pane2"))
+				styles.remove("left-titled-pane2");
 			if (!styles.contains("left-titled-pane1"))
 				styles.add("left-titled-pane1");
 		}			
 	}
-	
 }
