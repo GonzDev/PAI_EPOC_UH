@@ -1,23 +1,22 @@
+.root {
+	-fx-background-color: #FFFFFF;
+}
+
 .left-pane {
-	-fx-background-color: #87CEEB;
-}
-
-.right-pane {
-	-fx-background-color: #c1c1c1;
-	-fx-font-size: 12pt;
-}
-
-.center-pane {
-	-fx-background-color: #c1c1c1;
-	-fx-font-size: 12pt;
+	-fx-background-color: linear-gradient(from 50% 100% to 25% 25%, #e7fbfd, #87CEEB);
 }
 
 .top-pane {
-	-fx-background-color: linear-gradient(#FFFFFF, #87CEEB);
+	-fx-background-color: linear-gradient(from 100% 100% to 30% 50%, #e7fbfd, #87CEEB);
 }
 
-.left-accordion {
-	-fx-background-color: transparent ;
+#pacient-info {
+	-fx-background-color: white;
+	-fx-border-color: black;
+	-fx-border-width: 1px;
+	-fx-padding: 10pt;
+	-fx-spacing: 10pt;
+	-fx-font-size: 8pt;
 }
 
 .button_1 {
@@ -36,6 +35,7 @@
 .button_2 {
 	-fx-background-color: #ffffff ;
 	-fx-font-size: 12pt;
+	
 }
 
 .button_2:focused {
@@ -46,51 +46,35 @@
 	-fx-background-color: #fffff0;
 }
 
-
-/** --------- LEFT TITLED PANE -------------- */
-
-
-.left-titled-pane1 > .title 
-{
+.left-titled-pane1 > .title {
   	-fx-background-color: transparent;
-	-fx-font-size: 12pt;
 	-fx-padding: 0.333333em 0.666667em 0.333333em 0em;
+	-fx-font-size: 12pt;
 }
 
-
-.left-titled-pane1 > .title > .arrow-button 
-{
+.left-titled-pane1 > .title > .arrow-button {
 	-fx-background-color: transparent;
 }
 
-.left-titled-pane1 > .title > .arrow-button .arrow 
-{
+.left-titled-pane1 > .title > .arrow-button .arrow {
 	-fx-background-color: transparent;
 	-fx-padding: 0em 0em 0em 0em;
 }
 
-.left-titled-pane1:focused > .title 
-{
+.left-titled-pane1:focused > .title {
   	-fx-background-color: #ffffff;
 }
 
-.left-titled-pane1:hover > .title 
-{
+.left-titled-pane1:hover > .title {
   	-fx-background-color: #fffff0;
-}
-
-.left-titled-pane1:focused > .title > .arrow-button .arrow 
-{
-	-fx-background-color: transparent;
 }
 
 .left-titled-pane2 > .title 
 {
   	-fx-background-color: #ffffff;
-	-fx-font-size: 12pt;
 	-fx-padding: 0.333333em 0.666667em 0.333333em 0em;
+	-fx-font-size: 12pt;	
 }
-
 
 .left-titled-pane2 > .title > .arrow-button 
 {
@@ -118,6 +102,8 @@
 	-fx-background-color: transparent;
 }
 
-/** --------- END OF LEFT TITLED PANE -------- */
 
 
+.center-pane {
+	-fx-background-color: #c1c1c1;
+}

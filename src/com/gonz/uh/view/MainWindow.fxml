@@ -9,16 +9,40 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" stylesheets="@MainWindow.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <center>
-      <Pane id="rightPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
-   </center>
    <left>
-      <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" spacing="5.0" styleClass="left-pane" BorderPane.alignment="CENTER">
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" spacing="5.0" styleClass="left-pane" BorderPane.alignment="CENTER">
          <padding>
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
          </padding>
          <children>
-            <TitledPane fx:id="button1" alignment="BASELINE_LEFT" expanded="false" focusTraversable="false" styleClass="left-titled-pane1" text="1. DIAGNÓSTICO">
+            <HBox id="pacient-info" alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imageView_Pacient" fitHeight="70.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox maxHeight="1.7976931348623157E308" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="label_Name" text="Apellido Apellido, Nombre" wrapText="true" />
+                        <Label fx:id="label_Address" text="Dirección:" wrapText="true" />
+                        <HBox nodeOrientation="LEFT_TO_RIGHT" spacing="80.0">
+                           <children>
+                              <Label fx:id="label_Age" text="Edad" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="label_Gender" text="Sexo" />
+                           </children>
+                        </HBox>
+                        <Label fx:id="label_SIP" text="SIP:" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="label_NHC" text="NHC:" wrapText="true" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <TitledPane fx:id="button1" alignment="BASELINE_LEFT" expanded="false" focusTraversable="false" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="270.0" styleClass="left-titled-pane1" text="1. DIAGNÓSTICO">
                <content>
                   <VBox focusTraversable="true" style="-fx-background-color: #87CEEB;">
                      <children>
@@ -63,6 +87,9 @@
                      </children>
                   </VBox>
                </content>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
             </TitledPane>
             <Button fx:id="button2" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto2" styleClass="button_1" text="2. CLASIFICACIÓN DE GRAVEDAD">
                <font>
@@ -85,22 +112,22 @@
          </children>
       </VBox>
    </left>
-   <right>
-      <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="250.0" spacing="5.0" styleClass="right-pane" BorderPane.alignment="CENTER">
-         <padding>
-            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
-         </padding>
-         <children>
-            <HBox alignment="CENTER" />
-            <Label fx:id="label_SIP" text="Nº de SIP:" wrapText="true" />
-            <Label fx:id="label_ClinicHistory" text="Nº de historia clínica:" wrapText="true" />
-            <Label fx:id="label_Name" text="Nombre:" wrapText="true" />
-            <Label fx:id="label_Age" text="Edad:" wrapText="true" />
-            <Label fx:id="label_Address" text="Dirección:" wrapText="true" />
-         </children>
-      </VBox>
-   </right>
    <top>
-      <Pane minHeight="100.0" styleClass="top-pane" BorderPane.alignment="CENTER" />
+      <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="100.0" styleClass="top-pane" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="300.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="136.0" layoutY="42.0" prefHeight="100.0" prefWidth="300.0" text="PACEX - EPOC" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="39.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
    </top>
+   <right>
+      <Pane id="rightPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER" />
+   </right>
 </BorderPane>

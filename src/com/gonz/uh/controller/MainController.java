@@ -15,6 +15,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TitledPane;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
@@ -49,13 +51,17 @@ public class MainController implements Initializable {
 	@FXML
 	private Label label_SIP;
 	@FXML
-	private Label label_ClinicHistory;
+	private Label label_NHC;
 	@FXML
 	private Label label_Name;
 	@FXML
 	private Label label_Age;
 	@FXML
+	private Label label_Gender;
+	@FXML
 	private Label label_Address;
+	@FXML
+	private ImageView imageView_Pacient;
 	
 	private int currPage;
 	
@@ -173,11 +179,16 @@ public class MainController implements Initializable {
 	
 	private void showPatientInfo() {
 		
-		label_SIP.setText("Nº de SIP:\n" + patient.getSIP());
-		label_ClinicHistory.setText("Nº de historia clínica:\n" + patient.getClinicHistoy());
-		label_Name.setText("Nombre:\n" + patient.getName());
-		label_Age.setText("Edad:\n" + patient.getAge());
-		label_Address.setText("Dirección:\n" + patient.getAddress());
+		label_Name.setText(patient.getName());
+		label_Address.setText(patient.getAddress());
+		label_Age.setText(patient.getAge());
+		label_Gender.setText(patient.getGender());
+		label_SIP.setText("SIP: " + patient.getSIP());
+		label_NHC.setText("NHC: " + patient.getClinicHistoy());		
+		
+		
+		Image image = new Image(getClass().getResourceAsStream("/icon/gnome_person.png"));
+		imageView_Pacient.setImage(image);
 		
 	}
 	
@@ -226,18 +237,21 @@ public class MainController implements Initializable {
 	@FXML
 	public void goto2(ActionEvent actionEvent) {
 		updateStyle(8);
+		button1.setExpanded(false);
 		root.setCenter(pane5a2);
 	}
 	
 	@FXML
 	public void goto3(ActionEvent actionEvent) {
 		updateStyle(9);
+		button1.setExpanded(false);
 		root.setCenter(pane5a3);
 	}
 	
 	@FXML
 	public void goto4(ActionEvent actionEvent) {
 		updateStyle(10);
+		button1.setExpanded(false);
 		root.setCenter(pane5a4);
 	}
 	

@@ -7,11 +7,12 @@ public class Patient {
 	private String name;
 	private String address;
 	private String age;
+	private String gender;
 	
 	public Patient(String sip) {
 		
 		this.sip = sip;
-		this.name = this.clinicHistory = this.address = this.age = null;
+		this.name = this.clinicHistory = this.address = this.age = this.gender = null;
 		
 	}
 
@@ -30,6 +31,9 @@ public class Patient {
 	public String getAge() {	
 		return age;		
 	}
+	public String getGender() {
+		return gender;
+	}
 	
 	public void setName(String name) {	
 		this.name = name;	
@@ -41,7 +45,10 @@ public class Patient {
 		this.address = address;		
 	}
 	public void setAge(String age) {	
-		this.age = age + " años";		
+		this.age = age;		
 	}	
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 	
 }

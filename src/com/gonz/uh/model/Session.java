@@ -38,7 +38,6 @@ public class Session extends Application {
 		primaryStage.setTitle("EPOC Urgencias Hospitalarias");	
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		primaryStage.setFullScreen(true);
 		
 	}
 	
@@ -47,9 +46,10 @@ public class Session extends Application {
 		
 		Patient patient = new Patient(sip);
 		patient.setClinicHistoryNumber("632015");
-		patient.setName("Apellido1 Apellido2, Nombre");
+		patient.setName("Ortega Castillo, Gonzalo");
 		patient.setAge("57");
 		patient.setAddress("C/Paterna, 3, L'Eliana (Valencia)");
+		patient.setGender("Hombre");
 		return patient;
 		
 	}
