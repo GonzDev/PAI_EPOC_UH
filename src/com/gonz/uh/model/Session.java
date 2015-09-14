@@ -16,7 +16,7 @@ public class Session extends Application {
 	
 	public static void main(String[] args) {
 		
-		SIP = "03651700";
+		SIP = "2301920";
 		Application.launch(args);
 		
 	}
@@ -46,13 +46,10 @@ public class Session extends Application {
 	public static Patient loadPatientData(String sip) {
 		
 		Patient patient = new Patient(sip);
-		patient.setDni("48412089X");
-		patient.setName("Gonzalo Ortega Castillo");
-		patient.setAge("21");
-		patient.setGender(Patient.MALE);
+		patient.setClinicHistoryNumber("632015");
+		patient.setName("Apellido1 Apellido2, Nombre");
+		patient.setAge("57");
 		patient.setAddress("C/Paterna, 3, L'Eliana (Valencia)");
-		patient.setPhoneNumber("637 27 91 24");
-		patient.setImageURL("/sample/samplePatient.jpg");
 		return patient;
 		
 	}

@@ -15,8 +15,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TitledPane;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
@@ -49,19 +47,15 @@ public class MainController implements Initializable {
 	@FXML
 	private Button button4;
 	@FXML
-	private Label label_DNI;
+	private Label label_SIP;
+	@FXML
+	private Label label_ClinicHistory;
 	@FXML
 	private Label label_Name;
 	@FXML
 	private Label label_Age;
 	@FXML
-	private Label label_Gender;
-	@FXML
 	private Label label_Address;
-	@FXML
-	private Label label_Phone;
-	@FXML
-	private ImageView imageView_Photo;
 	
 	private int currPage;
 	
@@ -179,15 +173,11 @@ public class MainController implements Initializable {
 	
 	private void showPatientInfo() {
 		
-		label_Name.setText(patient.getName());
-		label_DNI.setText(patient.getDni());
-		label_Age.setText(patient.getAge());
-		label_Gender.setText(patient.getGender());
-		label_Address.setText(patient.getAddress());
-		label_Phone.setText(patient.getPhoneNumber());
-		Image image = new Image(
-				this.getClass().getResourceAsStream(patient.getImageURL()));
-		imageView_Photo.setImage(image);
+		label_SIP.setText("Nº de SIP:\n" + patient.getSIP());
+		label_ClinicHistory.setText("Nº de historia clínica:\n" + patient.getClinicHistoy());
+		label_Name.setText("Nombre:\n" + patient.getName());
+		label_Age.setText("Edad:\n" + patient.getAge());
+		label_Address.setText("Dirección:\n" + patient.getAddress());
 		
 	}
 	
@@ -272,8 +262,7 @@ public class MainController implements Initializable {
 			styles.remove("left-titled-pane2");
 			if (!styles.contains("left-titled-pane1"))
 				styles.add("left-titled-pane1");
-		}
-			
+		}			
 	}
 	
 }

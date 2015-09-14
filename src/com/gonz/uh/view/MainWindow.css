@@ -1,11 +1,23 @@
-.left-vbox {
+.left-pane {
+	-fx-background-color: #87CEEB;
+}
+
+.right-pane {
 	-fx-background-color: #c1c1c1;
-	-fx-padding: 15;
-	-fx-spacing: 5;
+	-fx-font-size: 12pt;
+}
+
+.center-pane {
+	-fx-background-color: #c1c1c1;
+	-fx-font-size: 12pt;
+}
+
+.top-pane {
+	-fx-background-color: linear-gradient(#FFFFFF, #87CEEB);
 }
 
 .left-accordion {
-	-fx-background-color: #c1c1c1;
+	-fx-background-color: transparent ;
 }
 
 .button_1 {
@@ -108,10 +120,4 @@
 
 /** --------- END OF LEFT TITLED PANE -------- */
 
-.right-vbox {
-	-fx-background-color: #c1c1c1;
-	-fx-padding: 15;
-	-fx-spacing: 5;
-	-fx-font-size: 12pt;
-}
 
