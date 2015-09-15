@@ -33,7 +33,7 @@ public class Session extends Application {
 		fxmlLoader.setController(mwc);
 		
 		BorderPane root = (BorderPane) fxmlLoader.load();		
-		Scene scene = new Scene(root, 1000, 900);
+		Scene scene = new Scene(root, 1200, 900);
 		
 		primaryStage.setTitle("EPOC Urgencias Hospitalarias");	
 		primaryStage.setScene(scene);

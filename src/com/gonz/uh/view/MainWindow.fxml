@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" stylesheets="@MainWindow.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@MainWindow.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <left>
-      <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" spacing="5.0" styleClass="left-pane" BorderPane.alignment="CENTER">
+      <VBox fx:id="vbox_LeftPane" focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" spacing="5.0" styleClass="left-pane" BorderPane.alignment="CENTER">
          <padding>
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
          </padding>
@@ -43,73 +43,6 @@
                   </VBox>
                </children>
             </HBox>
-            <TitledPane fx:id="button1" alignment="BASELINE_LEFT" expanded="false" focusTraversable="false" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="270.0" styleClass="left-titled-pane1" text="1. DIAGNÓSTICO">
-               <content>
-                  <VBox focusTraversable="true" style="-fx-background-color: #87CEEB;">
-                     <children>
-                        <Button fx:id="button1_1" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto11" styleClass="button_1" text="1. Evaluación de síntomas">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
-                        </Button>
-                        <Button fx:id="button1_2" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto12" styleClass="button_1" text="2. Exploración física">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="button1_3" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto13" styleClass="button_1" text="3. Tipo de agudización">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="button1_4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto14" styleClass="button_1" text="4. Comorbilidad">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="button1_5" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto15" styleClass="button_1" text="5. Situación basal">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="button1_6" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto16" styleClass="button_1" text="6. Tratamiento previo">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="button1_7" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto17" styleClass="button_1" text="7. Exploraciones complementarias">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </VBox>
-               </content>
-               <VBox.margin>
-                  <Insets top="15.0" />
-               </VBox.margin>
-            </TitledPane>
-            <Button fx:id="button2" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto2" styleClass="button_1" text="2. CLASIFICACIÓN DE GRAVEDAD">
-               <font>
-                  <Font size="10.0" />
-               </font>
-            </Button>
-            <Button fx:id="button3" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto3" styleClass="button_1" text="3. ESTABLECER ETIOLOGÍA">
-               <font>
-                  <Font size="10.0" />
-               </font>
-            </Button>
-            <Button fx:id="button4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto4" styleClass="button_1" text="4. INICIAR TRATAMIENTO">
-               <font>
-                  <Font size="10.0" />
-               </font>
-               <opaqueInsets>
-                  <Insets right="1.0" top="1.0" />
-               </opaqueInsets>
-            </Button>
          </children>
       </VBox>
    </left>
@@ -125,51 +58,53 @@
                   </Label>
                </children>
             </AnchorPane>
-            <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" HBox.hgrow="SOMETIMES">
+            <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
                <children>
-                  <GridPane>
+                  <GridPane HBox.hgrow="ALWAYS">
                     <columnConstraints>
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="125.0" />
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="125.0" />
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="125.0" />
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="125.0" />
-                      <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="125.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="50.0" prefWidth="125.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="50.0" prefWidth="125.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="50.0" prefWidth="125.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="50.0" prefWidth="125.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="50.0" prefWidth="125.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
                     </rowConstraints>
                      <children>
-                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
-                           <children>
+                        <Button fx:id="button_Top1" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#gotoAttention" styleClass="button-top" text="Atención" textOverrun="WORD_ELLIPSIS">
+                           <graphic>
                               <Circle id="custom-circle" fill="WHITE" radius="25.0" stroke="#211a1a" strokeType="INSIDE" strokeWidth="0.0" />
-                              <Label text="Atención" />
-                           </children>
-                        </VBox>
-                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1">
+                           </graphic>
+                        </Button>
+                        <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="10.0" GridPane.columnIndex="1">
                            <children>
-                              <Circle fill="WHITE" radius="25.0" stroke="#211a1a" strokeType="INSIDE" strokeWidth="0.0" />
-                              <Label text="Analítica" />
+                              <Button fx:id="button_Top2" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoAnalytic" styleClass="button-top" text="Analítica" textOverrun="WORD_ELLIPSIS">
+                                 <graphic>
+                                    <Circle id="custom-circle" fill="WHITE" radius="25.0" stroke="#211a1a" strokeType="INSIDE" strokeWidth="0.0" />
+                                 </graphic>
+                              </Button>
                            </children>
                         </VBox>
-                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="4">
-                           <children>
-                              <Circle fill="WHITE" radius="25.0" stroke="#211a1a" strokeType="INSIDE" strokeWidth="0.0" />
-                              <Label text="Informe clínico" />
-                           </children>
-                        </VBox>
-                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="3">
-                           <children>
-                              <Circle fill="WHITE" radius="25.0" stroke="#211a1a" strokeType="INSIDE" strokeWidth="0.0" />
-                              <Label text="Resolución" />
-                           </children>
-                        </VBox>
-                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="2">
-                           <children>
-                              <Circle fill="WHITE" radius="25.0" stroke="#211a1a" strokeType="INSIDE" strokeWidth="0.0" />
-                              <Label text="Evolución" />
-                           </children>
-                        </VBox>
+                        <Button fx:id="button_Top3" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoEvolution" styleClass="button-top" text="Evaluación" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="2">
+                           <graphic>
+                              <Circle id="custom-circle" fill="WHITE" radius="25.0" stroke="#211a1a" strokeType="INSIDE" strokeWidth="0.0" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="button_Top4" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#gotoResolution" styleClass="button-top" text="Resolución" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="3">
+                           <graphic>
+                              <Circle id="custom-circle" fill="WHITE" radius="25.0" stroke="#211a1a" strokeType="INSIDE" strokeWidth="0.0" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="button_Top5" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#gotoReport" styleClass="button-top" text="Informe clínico" textOverrun="WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="4">
+                           <graphic>
+                              <Circle id="custom-circle" fill="WHITE" radius="25.0" stroke="#211a1a" strokeType="INSIDE" strokeWidth="0.0" />
+                           </graphic>
+                        </Button>
                      </children>
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
                   </GridPane>
                </children>
             </HBox>

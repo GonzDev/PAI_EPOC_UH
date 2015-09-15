@@ -10,6 +10,15 @@
 	-fx-background-color: linear-gradient(from 100% 100% to 30% 50%, #e7fbfd, #87CEEB);
 }
 
+.button-top {
+	-fx-background-color: transparent;
+	-fx-font-size: 11pt;	
+}
+.button-top:hover {
+	-fx-font-size: 13pt;
+	-fx-background-color: transparent;	
+}
+
 #pacient-info {
 	-fx-background-color: white;
 	-fx-border-color: black;

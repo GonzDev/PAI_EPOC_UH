@@ -2,53 +2,49 @@ package com.gonz.uh.controller;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import com.gonz.uh.controller.attention.AttMenuController;
 import com.gonz.uh.model.Patient;
 
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TitledPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.shape.Circle;
+import javafx.scene.layout.VBox;
 
 public class MainController implements Initializable {
+	
+	private final int ATTENTION = 1;
+	private final int ANALYTIC = 2;
+	private final int EVOLUTION = 3;
+	private final int RESOLUTION = 4;
+	private final int REPORT = 5;
+	
+	private int section;
 	
 	private Patient patient;
 	
 	@FXML
 	private BorderPane root;
 	@FXML
-	private TitledPane button1;
+	private VBox vbox_LeftPane;
+	
 	@FXML
-	private Button button1_1;
+	private Button button_Top1;
 	@FXML
-	private Button button1_2;
+	private Button button_Top2;
 	@FXML
-	private Button button1_3;
+	private Button button_Top3;
 	@FXML
-	private Button button1_4;
+	private Button button_Top4;
 	@FXML
-	private Button button1_5;
-	@FXML
-	private Button button1_6;
-	@FXML
-	private Button button1_7;
-	@FXML
-	private Button button2;
-	@FXML
-	private Button button3;
-	@FXML
-	private Button button4;
+	private Button button_Top5;
+
 	@FXML
 	private Label label_SIP;
 	@FXML
@@ -63,39 +59,20 @@ public class MainController implements Initializable {
 	private Label label_Address;
 	@FXML
 	private ImageView imageView_Pacient;
-
-	private int currPage;
 	
-	private ArrayList<Button> buttons;
+	private VBox attMenu;
 	
-	private AnchorPane pane5a11;
-	private AnchorPane pane5a12;
-	private AnchorPane pane5a13;
-	private AnchorPane pane5a14;
-	private AnchorPane pane5a15;
-	private AnchorPane pane5a16;
-	private AnchorPane pane5a17;
-	private AnchorPane pane5a2;
-	private AnchorPane pane5a3;
-	private AnchorPane pane5a4;
-	
-	private Att5a11Controller pane5a11Controller;
-	private Att5a12Controller pane5a12Controller;
-	private Att5a13Controller pane5a13Controller;
-	private Att5a14Controller pane5a14Controller;
-	private Att5a15Controller pane5a15Controller;
-	private Att5a16Controller pane5a16Controller;
-	private Att5a17Controller pane5a17Controller;
-	private Att5a2Controller pane5a2Controller;
-	private Att5a3Controller pane5a3Controller;
-	private Att5a4Controller pane5a4Controller;
+	private AttMenuController attController;
 	
 	public MainController(Patient patient) {		
 		
 		this.patient = patient;
-		this.currPage = 0;
-		this.buttons = new ArrayList<>();
+		this.section = 0;
 		
+	}
+	
+	public BorderPane getRoot() {
+		return root;
 	}
 	
 	@Override
@@ -105,78 +82,21 @@ public class MainController implements Initializable {
 		try {
 			long before = System.currentTimeMillis();
 			
-			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/5a-1.1.fxml"));
-			pane5a11Controller = new Att5a11Controller(this);
-			loader.setController(pane5a11Controller);
-			pane5a11 = (AnchorPane) loader.load();
+			showPatientInfo();
+			vbox_LeftPane.getChildren().add(new VBox());
 			
-			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/5a-1.2.fxml"));
-			pane5a12Controller = new Att5a12Controller(this);
-			loader.setController(pane5a12Controller);			
-			pane5a12 = (AnchorPane) loader.load();
-			
-			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/5a-1.3.fxml"));
-			pane5a13Controller = new Att5a13Controller(this);
-			loader.setController(pane5a13Controller);	
-			pane5a13 = (AnchorPane) loader.load();
-			
-			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/5a-1.4.fxml"));
-			pane5a14Controller = new Att5a14Controller(this);
-			loader.setController(pane5a14Controller);
-			pane5a14 = (AnchorPane) loader.load();
-			
-			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/5a-1.5.fxml"));
-			pane5a15Controller = new Att5a15Controller(this);
-			loader.setController(pane5a15Controller);
-			pane5a15 = (AnchorPane) loader.load();
-			
-			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/5a-1.6.fxml"));
-			pane5a16Controller = new Att5a16Controller(this);
-			loader.setController(pane5a16Controller);
-			pane5a16 = (AnchorPane) loader.load();
-			
-			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/5a-1.7.fxml"));
-			pane5a17Controller = new Att5a17Controller(this);
-			loader.setController(pane5a17Controller);
-			pane5a17 = (AnchorPane) loader.load();
-			
-			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/5a-2.fxml"));
-			pane5a2Controller = new Att5a2Controller(this);
-			loader.setController(pane5a2Controller);
-			pane5a2 = (AnchorPane) loader.load();
-			
-			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/5a-3.fxml"));
-			pane5a3Controller = new Att5a3Controller(this);
-			loader.setController(pane5a3Controller);
-			pane5a3 = (AnchorPane) loader.load();
-			
-			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/5a-4.fxml"));
-			pane5a4Controller = new Att5a4Controller(this);
-			loader.setController(pane5a4Controller);
-			pane5a4 = (AnchorPane) loader.load();
-			
-			buttons.add(null);
-			buttons.add(button1_1);
-			buttons.add(button1_2);
-			buttons.add(button1_3);
-			buttons.add(button1_4);
-			buttons.add(button1_5);
-			buttons.add(button1_6);
-			buttons.add(button1_7);
-			buttons.add(button2);
-			buttons.add(button3);
-			buttons.add(button4);
+			loader = new FXMLLoader(this.getClass().getResource("/com/gonz/uh/view/attention/AttMenu.fxml"));
+			attController = new AttMenuController(this);
+			loader.setController(attController);
+			attMenu = (VBox) loader.load();
 			
 			long after = System.currentTimeMillis();
-			System.out.println("Tiempo de carga: " + (after-before));
-			
+			System.out.println("Tiempo de carga: " + (after-before));			
 		} catch (IOException e) {
 			e.printStackTrace();
-		}	
+		}			
 		
-		showPatientInfo();	
-		
-	}
+	}	
 	
 	private void showPatientInfo() {
 		
@@ -194,91 +114,54 @@ public class MainController implements Initializable {
 	}
 	
 	@FXML
-	public void goto11(ActionEvent actionEvent) {
-		updateStyle(1);
-		root.setCenter(pane5a11);
-	}
-	
-	@FXML
-	public void goto12(ActionEvent actionEvent) {
-		updateStyle(2);
-		root.setCenter(pane5a12);
-	}
-	
-	@FXML
-	public void goto13(ActionEvent actionEvent) {
-		updateStyle(3);
-		root.setCenter(pane5a13);
-	}
-	
-	@FXML
-	public void goto14(ActionEvent actionEvent) {
-		updateStyle(4);
-		root.setCenter(pane5a14);
-	}
-	
-	@FXML
-	public void goto15(ActionEvent actionEvent) {
-		updateStyle(5);
-		root.setCenter(pane5a15);
-	}
-	
-	@FXML
-	public void goto16(ActionEvent actionEvent) {
-		updateStyle(6);
-		root.setCenter(pane5a16);
-	}
-	
-	@FXML
-	public void goto17(ActionEvent actionEvent) {
-		updateStyle(7);
-		root.setCenter(pane5a17);
-	}
-	
-	@FXML
-	public void goto2(ActionEvent actionEvent) {
-		updateStyle(8);
-		button1.setExpanded(false);
-		root.setCenter(pane5a2);
-	}
-	
-	@FXML
-	public void goto3(ActionEvent actionEvent) {
-		updateStyle(9);
-		button1.setExpanded(false);
-		root.setCenter(pane5a3);
-	}
-	
-	@FXML
-	public void goto4(ActionEvent actionEvent) {
-		updateStyle(10);
-		button1.setExpanded(false);
-		root.setCenter(pane5a4);
-	}
-	
-	private void updateStyle(int index) {
-		if(currPage == 0)
-			currPage = index;
-		else {
-			buttons.get(currPage).getStyleClass().remove("button_2");
-			buttons.get(currPage).getStyleClass().add("button_1");
+	public void gotoAttention() {
+		if (section != ATTENTION) {
+			vbox_LeftPane.getChildren().remove(1);
+			vbox_LeftPane.getChildren().add(1, attMenu);
+			section = ATTENTION;
+			attController.showCurrentPage();
 		}
-		
-		currPage = index;
-		buttons.get(index).getStyleClass().remove("button_1");
-		buttons.get(index).getStyleClass().add("button_2");
-		
-		ObservableList<String> styles = button1.getStyleClass();
-		if (currPage < 8) {
-			if (styles.contains("left-titled-pane1"))
-				styles.remove("left-titled-pane1");
-			if (!styles.contains("left-titled-pane2"))
-				styles.add("left-titled-pane2");
-		} else {
-			if (styles.contains("left-titled-pane2"))
-				styles.remove("left-titled-pane2");
-			if (!styles.contains("left-titled-pane1"))
-				styles.add("left-titled-pane1");
-		}			
 	}
+	
+	@FXML
+	public void gotoAnalytic() {
+		if (section != ANALYTIC) {
+			vbox_LeftPane.getChildren().remove(1);
+			vbox_LeftPane.getChildren().add(new VBox());
+			section = ANALYTIC;
+			root.setCenter(null);
+		}
+	}
+	
+	@FXML
+	public void gotoEvolution() {
+		if (section != EVOLUTION) {
+			vbox_LeftPane.getChildren().remove(1);
+			vbox_LeftPane.getChildren().add(new VBox());
+			section = EVOLUTION;
+			root.setCenter(null);
+		}
+	}
+	
+	@FXML
+	public void gotoResolution() {
+		if (section != RESOLUTION) {
+			vbox_LeftPane.getChildren().remove(1);
+			vbox_LeftPane.getChildren().add(new VBox());
+			section = RESOLUTION;
+			root.setCenter(null);
+		}
+	}
+	
+	@FXML
+	public void gotoReport() {
+		if (section != REPORT) {
+			vbox_LeftPane.getChildren().remove(1);
+			vbox_LeftPane.getChildren().add(new VBox());
+			section = REPORT;
+			root.setCenter(null);
+		}
+	}
+
+
 }

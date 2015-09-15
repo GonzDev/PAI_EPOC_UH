@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane fx:id="button1" alignment="BASELINE_LEFT" expanded="false" focusTraversable="false" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="270.0" styleClass="left-titled-pane1" text="1. DIAGNÓSTICO">
+         <content>
+            <VBox focusTraversable="true" style="-fx-background-color: #87CEEB;">
+               <children>
+                  <Button fx:id="button1_1" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto11" styleClass="button_1" text="1. Evaluación de síntomas">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="button1_2" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto12" styleClass="button_1" text="2. Exploración física">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1_3" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto13" styleClass="button_1" text="3. Tipo de agudización">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1_4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto14" styleClass="button_1" text="4. Comorbilidad">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1_5" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto15" styleClass="button_1" text="5. Situación basal">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1_6" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto16" styleClass="button_1" text="6. Tratamiento previo">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1_7" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto17" styleClass="button_1" text="7. Exploraciones complementarias">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </content>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </TitledPane>
+      <Button fx:id="button2" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto2" styleClass="button_1" text="2. CLASIFICACIÓN DE GRAVEDAD">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="button3" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto3" styleClass="button_1" text="3. ESTABLECER ETIOLOGÍA">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="button4" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#goto4" styleClass="button_1" text="4. INICIAR TRATAMIENTO">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="1.0" top="1.0" />
+         </opaqueInsets>
+      </Button>
+   </children>
+</VBox>

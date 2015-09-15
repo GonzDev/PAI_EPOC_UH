@@ -1,4 +1,4 @@
-package com.gonz.uh.controller;
+package com.gonz.uh.controller.attention;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -27,10 +27,10 @@ public class Att5a3Controller implements Initializable {
 	@FXML
 	private Button butt_Back, butt_Continue;
 
-	private MainController mainController;
+	private AttMenuController menuController;
 
-	public Att5a3Controller(MainController mainController) {
-		this.mainController = mainController;
+	public Att5a3Controller(AttMenuController menuController) {
+		this.menuController = menuController;
 	}
 	
 	@Override
@@ -40,12 +40,12 @@ public class Att5a3Controller implements Initializable {
 	
 	@FXML
 	public void previousPage(ActionEvent actionEvent) {
-		mainController.goto2(actionEvent);
+		menuController.goto2(actionEvent);
 	}
 	
 	@FXML
 	public void nextPage(ActionEvent actionEvent) {
-		mainController.goto4(actionEvent);
+		menuController.goto4(actionEvent);
 	}
 
 }

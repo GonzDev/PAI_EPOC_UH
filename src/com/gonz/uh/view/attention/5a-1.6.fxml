@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxWidth="1.7976931348623157E308" styleClass="anchor-pane" stylesheets="@CenterSection.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxWidth="1.7976931348623157E308" styleClass="anchor-pane" stylesheets="@AttStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox layoutX="55.0" layoutY="45.0" maxWidth="1.7976931348623157E308" prefHeight="750.0" spacing="5.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
          <children>
@@ -133,13 +133,13 @@
             </HBox>
             <CheckBox fx:id="checkBox_3" mnemonicParsing="false" text="Beta-adenérgicos de acción corta (SABA)">
                <VBox.margin>
-                  <Insets top="15.0" />
+                  <Insets top="10.0" />
                </VBox.margin>
             </CheckBox>
             <CheckBox fx:id="checkBox_4" mnemonicParsing="false" text="Anticolinergicos de acción prolongada (SAMA)" />
             <CheckBox fx:id="checkBox_5" mnemonicParsing="false" text="Anticolinérgicos de acción prolongada (LAMA)">
                <VBox.margin>
-                  <Insets top="15.0" />
+                  <Insets top="10.0" />
                </VBox.margin>
             </CheckBox>
             <CheckBox fx:id="checkBox_6" mnemonicParsing="false" text="Beta-adrenérgicos de acción prolongada (LABA)" />
@@ -148,12 +148,12 @@
             <CheckBox fx:id="checkBox_9" mnemonicParsing="false" text="Corticoides orales (mantenimiento)" />
             <CheckBox fx:id="checkBox_10" mnemonicParsing="false" text="Inhibidores de fosfodiesterasa IV">
                <VBox.margin>
-                  <Insets top="15.0" />
+                  <Insets top="10.0" />
                </VBox.margin>
             </CheckBox>
             <CheckBox fx:id="checkBox_11" mnemonicParsing="false" text="Teofiinas">
                <VBox.margin>
-                  <Insets top="15.0" />
+                  <Insets top="10.0" />
                </VBox.margin>
             </CheckBox>
             <CheckBox fx:id="checkBox_12" mnemonicParsing="false" text="Antioxidantes (N-acetil-cisteina)" />
@@ -167,7 +167,7 @@
                   <RadioButton fx:id="radButt_13N" mnemonicParsing="false" onAction="#enableGroup13" text="No" toggleGroup="$group02" GridPane.columnIndex="2" />
                   <Label style="-fx-font-weight: bold;" text="- Oxigenoterapia domiciliaria crónica:">
                      <GridPane.margin>
-                        <Insets top="20.0" />
+                        <Insets top="10.0" />
                      </GridPane.margin>
                   </Label>
                </children>
@@ -190,7 +190,7 @@
                   <TextField fx:id="textField_13A" />
                </children>
                <VBox.margin>
-                  <Insets top="15.0" />
+                  <Insets top="10.0" />
                </VBox.margin>
             </HBox>
             <GridPane>
@@ -203,7 +203,7 @@
                   <RadioButton fx:id="radButt_14N" mnemonicParsing="false" onAction="#enableGroup14" text="No" toggleGroup="$group021" GridPane.columnIndex="2" />
                   <Label style="-fx-font-weight: bold;" text="- Ventilación mecánica a domicilio:">
                      <GridPane.margin>
-                        <Insets top="20.0" />
+                        <Insets top="10.0" />
                      </GridPane.margin>
                   </Label>
                </children>
@@ -236,7 +236,7 @@
                   </RadioButton>
                </children>
                <VBox.margin>
-                  <Insets top="15.0" />
+                  <Insets top="10.0" />
                </VBox.margin>
             </HBox>
             <Label text="2. Valorar el resto de medicación concomitante (comorbilidad)">
